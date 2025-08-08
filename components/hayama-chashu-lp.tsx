@@ -274,7 +274,7 @@ return (
   {/* 秘伝の製法 */}
   <section className="py-16 bg-white">
     <div className="container mx-auto px-4 max-w-6xl">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">旨さを閉じ込める、炭酸低温煮込み</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">旨さを閉じ込める炭酸低温煮込み</h2>
       <div className="flex flex-col gap-12">
         {/* 1. 炭酸がもたらす驚きの柔らかさ */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -336,7 +336,7 @@ return (
   {/* 商品カード */}
   <section className="py-16 bg-gray-50">
     <div className="container mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">商品カード</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">商品のご紹介</h2>
       <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
         {products.map((p, i) => (
           <Card key={i} className="overflow-hidden shadow-sm hover:shadow-md transition-shadow">
