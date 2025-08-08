@@ -310,7 +310,7 @@ return (
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="relative aspect-[4/3] w-full">
             <Image
-              src="/images/IMG_0957（補正）.jpg"
+              src="/images/IMG_0965（補正）.jpg"
               alt="毎日炊くイメージ"
               fill
               className="object-cover rounded-lg"
@@ -319,7 +319,7 @@ return (
           <div className="space-y-4 font-sans">
             <h3 className="text-xl font-bold font-heading">● 毎日炊くからこそ、たどり着ける味</h3>
             <p className="text-[17px] leading-relaxed text-gray-700">
-              私たちは年間を通して何百キロというチャーシューを炊いています。仕込みの量が違えば、鍋にたまる旨味の濃度も違う。大量調理だからこそ引き出せる“厚みのある味”が、ここにはあります。再現ではなく、“積み重ね”でしかたどり着けないプロの味。ぜひ、ご家庭で体感してください。
+              毎日のようにチャーシューを仕込む現場では、火加減・時間・漬け込み具合といった細部が、職人の手と感覚で磨かれていきます。何百キロという肉を扱う中で、見えてくるのは「再現ではなく積み重ね」。どんなに良いレシピも、仕込みを重ねてはじめて“芯まで旨い”チャーシューが出来上がります。私たちがたどり着いた味は、プロの現場でしか生まれない日常の積み重ねです。
             </p>
           </div>
         </div>
