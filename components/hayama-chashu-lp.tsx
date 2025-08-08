@@ -83,7 +83,7 @@ const reviews = [
 const products = [
   {
     image: "/images/product-500g.jpg",
-    titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
+    titleLine1: "ラーメン屋が作る本物チャーシュー",
     titleLine2: "国産 500ｇ",
     price: "4,390円（税・冷凍送料込）",
     note: "先ずはお試しに",
@@ -93,7 +93,7 @@ const products = [
   },
   {
     image: "/images/product-1000g.jpg",
-    titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
+    titleLine1: "ラーメン屋が作る本物チャーシュー",
     titleLine2: "国産 1,000ｇ",
     price: "6,480円（税・冷凍送料込）",
     note: "リピーターの皆さまへ",
@@ -103,7 +103,7 @@ const products = [
   },
   {
     image: "/images/product-gift-700g.jpg",
-    titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
+    titleLine1: "ラーメン屋が作る本物チャーシュー",
     titleLine2: "国産 700ｇ",
     price: "6,280円（税・冷凍送料・化粧箱代込）",
     note: "大切なあの方への贈り物に",
