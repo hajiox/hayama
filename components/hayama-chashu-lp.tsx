@@ -81,33 +81,36 @@ const reviews = [
 ]
 
 const products = [
-{
-  image: "/images/product-500g.jpg",
-  titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
-  titleLine2: "国産 500ｇ",
-  price: "4,390円（税・冷凍送料込）",
-  note: "先ずはお試しに",
-  href: "#",
-  sauceNote: "チャーシュー専用だれ80cc１本付属",
-},
-{
-  image: "/images/product-1000g.jpg",
-  titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
-  titleLine2: "国産 1,000ｇ",
-  price: "6,480円（税・冷凍送料込）",
-  note: "リピーターの皆さまへ",
-  href: "#",
-  sauceNote: "チャーシュー専用だれ80cc１本付属",
-},
-{
-  image: "/images/product-gift-700g.jpg",
-  titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
-  titleLine2: "国産 700ｇ",
-  price: "6,280円（税・冷凍送料・化粧箱代込）",
-  note: "大切なあの方への贈り物に",
-  href: "#",
-  sauceNote: "チャーシュー専用だれ80cc１本付属",
-},
+  {
+    image: "/images/product-500g.jpg",
+    titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
+    titleLine2: "国産 500ｇ",
+    price: "4,390円（税・冷凍送料込）",
+    note: "先ずはお試しに",
+    href: "#",
+    sauceNote: "チャーシュー専用だれ80cc１本付属",
+    storageInfo: "冷凍保存：1年／解凍後：3日間", // 追加
+  },
+  {
+    image: "/images/product-1000g.jpg",
+    titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
+    titleLine2: "国産 1,000ｇ",
+    price: "6,480円（税・冷凍送料込）",
+    note: "リピーターの皆さまへ",
+    href: "#",
+    sauceNote: "チャーシュー専用だれ80cc１本付属",
+    storageInfo: "冷凍保存：1年／解凍後：3日間", // 追加
+  },
+  {
+    image: "/images/product-gift-700g.jpg",
+    titleLine1: "麓山高原豚 ラーメン屋が作る本物のチャーシュー",
+    titleLine2: "国産 700ｇ",
+    price: "6,280円（税・冷凍送料・化粧箱代込）",
+    note: "大切なあの方への贈り物に",
+    href: "#",
+    sauceNote: "チャーシュー専用だれ80cc１本付属",
+    storageInfo: "冷凍保存：1年／解凍後：3日間", // 追加
+  },
 ]
 
 return (
@@ -157,15 +160,13 @@ return (
         会津ブランド館のチャーシュー。ご評価頂きありがとうございます。
       </p>
 
-      <div className="flex flex-wrap justify-center gap-4 mb-6">
-        <Image src="/images/rakuten-rank-1-item1.jpg" alt="楽天ランキング1位獲得" width={210} height={120} className="rounded border bg-white" />
-        <Image src="/images/rakuten-rank-1-item2.jpg" alt="楽天ランキング1位獲得" width={210} height={120} className="rounded border bg-white" />
-        <Image src="/images/rakuten-rank-1-item3.jpg" alt="楽天ランキング1位獲得" width={210} height={120} className="rounded border bg-white" />
-      </div>
-      <div className="flex flex-wrap justify-center gap-4">
-        <Image src="/images/yahoo-rank-1-item1.jpg" alt="Yahoo!ショッピングカテゴリランキング1位獲得" width={210} height={120} className="rounded border bg-white" />
-        <Image src="/images/yahoo-rank-1-item2.jpg" alt="Yahoo!ショッピングカテゴリランキング1位獲得" width={210} height={120} className="rounded border bg-white" />
-        <Image src="/images/yahoo-rank-2-item1.jpg" alt="Yahoo!ショッピングカテゴリランキング2位入賞" width={210} height={120} className="rounded border bg-white" />
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+        <Image src="/images/rakuten-rank-1-item1.jpg" alt="楽天ランキング1位獲得" width={210} height={120} className="rounded border bg-white w-full h-auto object-contain" />
+        <Image src="/images/rakuten-rank-1-item2.jpg" alt="楽天ランキング1位獲得" width={210} height={120} className="rounded border bg-white w-full h-auto object-contain" />
+        <Image src="/images/rakuten-rank-1-item3.jpg" alt="楽天ランキング1位獲得" width={210} height={120} className="rounded border bg-white w-full h-auto object-contain" />
+        <Image src="/images/yahoo-rank-1-item1.jpg" alt="Yahoo!ショッピングカテゴリランキング1位獲得" width={210} height={120} className="rounded border bg-white w-full h-auto object-contain" />
+        <Image src="/images/yahoo-rank-1-item2.jpg" alt="Yahoo!ショッピングカテゴリランキング1位獲得" width={210} height={120} className="rounded border bg-white w-full h-auto object-contain" />
+        <Image src="/images/yahoo-rank-2-item1.jpg" alt="Yahoo!ショッピングカテゴリランキング2位入賞" width={210} height={120} className="rounded border bg-white w-full h-auto object-contain" />
       </div>
     </div>
   </section>
@@ -346,11 +347,14 @@ return (
               <CardTitle className="text-lg leading-snug font-heading">{p.titleLine1}</CardTitle>
               <CardDescription className="text-base text-gray-800 font-sans">{p.titleLine2}</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col h-full">
               <p className="text-2xl font-bold text-red-600 font-sans">{p.price}</p>
               <p className="text-sm font-medium text-blue-600 mt-2 font-sans">{p.note}</p>
               {p.sauceNote && (
                 <p className="text-sm text-gray-700 mt-1 font-sans">{p.sauceNote}</p>
+              )}
+              {p.storageInfo && (
+                <p className="text-sm text-gray-700 mt-1 font-sans">{p.storageInfo}</p>
               )}
             </CardContent>
           </Card>
