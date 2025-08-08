@@ -129,17 +129,19 @@ return (
           福島県産ブランド豚『麓山高原豚チャーシュー』誕生
         </h1>
         <div className="space-y-5 text-gray-700 leading-relaxed text-[17px] font-sans">
-          <p className="font-semibold">会津ブランド館がこのチャーシューを作る訳</p>
+          <p className="font-semibold">会津ブランド館がこのチャーシューを作る理由</p>
           <p>
-            かつて私たちは、会津でラーメン店を営んでいました。けれどコロナ禍で客足が途絶え、「もう一度あの味を家で食べたい」という声が届くようになりました。
+            コロナ禍で「お店に行けない」「もう一度、あの味を家で食べたい」という声を多くいただきました。その想いに応えるべく、私たちは商品開発に踏み出しました。
           </p>
           <p>
-            そこで私たちは、“あのチャーシューだけでも届けよう”と立ち上がり、炭酸低温煮込み、継ぎ足しのたれなど、店のノウハウをすべて注ぎ込みました。
+            炭酸低温煮込み、継ぎ足しのたれなど、ラーメン店として培ってきた独自のノウハウを余すことなく注ぎ込みました。
           </p>
           <p>
-            気づけば、Amazonベストセラー、楽天・Yahooランキング1位、メルカリショップアワードも受賞。でも、目指しているのは数字ではなく、“心に残る味”。
+            気づけば、Amazonベストセラー、楽天・Yahooランキング1位、メルカリショップアワード受賞と、ありがたい評価もいただくようになりました。
           </p>
-          <p>あの日の一杯を思い出しながら、今日も変わらず煮込み続けています。</p>
+          <p>
+            けれど、私たちが目指しているのは“数字”ではなく、“心に残る味”。あの日のラーメンを思い出してもらえるように──今日も変わらず、チャーシューを煮込み続けています。
+          </p>
         </div>
       </div>
     </div>
@@ -199,7 +201,7 @@ return (
   {/* 肉の美味しさの秘密 */}
   <section className="py-16 bg-gray-50">
     <div className="container mx-auto px-4 max-w-6xl">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">肉の美味しさの秘密</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">麓山高原豚の美味しさの秘密</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* 1 赤身の柔らかさ */}
         <div className="space-y-3">
