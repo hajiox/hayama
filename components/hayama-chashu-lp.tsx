@@ -88,6 +88,7 @@ const products = [
   price: "4,390円（税・冷凍送料込）",
   note: "先ずはお試しに",
   href: "#",
+  sauceNote: "チャーシュー専用だれ80cc１本付属",
 },
 {
   image: "/images/product-1000g.jpg",
@@ -96,6 +97,7 @@ const products = [
   price: "6,480円（税・冷凍送料込）",
   note: "リピーターの皆さまへ",
   href: "#",
+  sauceNote: "チャーシュー専用だれ80cc１本付属",
 },
 {
   image: "/images/product-gift-700g.jpg",
@@ -104,6 +106,7 @@ const products = [
   price: "6,280円（税・冷凍送料・化粧箱代込）",
   note: "大切なあの方への贈り物に",
   href: "#",
+  sauceNote: "チャーシュー専用だれ80cc１本付属",
 },
 ]
 
@@ -346,6 +349,9 @@ return (
             <CardContent>
               <p className="text-2xl font-bold text-red-600 font-sans">{p.price}</p>
               <p className="text-sm font-medium text-blue-600 mt-2 font-sans">{p.note}</p>
+              {p.sauceNote && (
+                <p className="text-sm text-gray-700 mt-1 font-sans">{p.sauceNote}</p>
+              )}
             </CardContent>
           </Card>
         ))}
