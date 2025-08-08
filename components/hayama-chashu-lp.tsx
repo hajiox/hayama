@@ -113,7 +113,7 @@ return (
   <section className="relative">
     <div className="relative h-[56vh] md:h-[64vh]">
       <Image
-        src="/images/hero-main.jpg"
+        src="/images/main-visual-artboard-1.jpg"
         alt="麓山高原豚チャーシュー メインビジュアル"
         fill
         className="object-cover"
@@ -293,7 +293,7 @@ return (
   {/* 商品カード */}
   <section className="py-16 bg-gray-50">
     <div className="container mx-auto px-4">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">商品カードセクション</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">商品カード</h2>
       <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
         {products.map((p, i) => (
           <Card key={i} className="overflow-hidden shadow-sm hover:shadow-md transition-shadow">
@@ -328,7 +328,7 @@ return (
     </div>
   </section>
 
-  {/* お客様の声セクション（レビュー） */}
+  {/* お客様の声 */}
   <section className="py-16 bg-gray-100">
     <div className="container mx-auto px-4 max-w-6xl">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">お客様の声</h2>
@@ -361,10 +361,10 @@ return (
     </div>
   </section>
 
-  {/* よくあるご質問（FAQ）セクション */}
+  {/* よくあるご質問（FAQ） */}
   <section className="py-16 bg-white">
     <div className="container mx-auto px-4 max-w-4xl">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">よくあるご質問（FAQ）セクション</h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">よくあるご質問（FAQ）</h2>
       <div className="space-y-6 font-sans">
         <div className="border-b pb-4">
           <h3 className="font-semibold text-lg mb-2 font-heading">Q1. 黒っぽい筋や斑点がありますが、大丈夫ですか？</h3>
@@ -400,7 +400,7 @@ return (
     </div>
   </section>
 
-  {/* ご購入はこちらかセクション */}
+  {/* ご購入はこちらから */}
   <section className="py-16 bg-white">
     <div className="container mx-auto px-4">
       <h2 className="text-3xl font-bold text-center mb-12 font-heading">ご購入はこちらから</h2>
@@ -480,7 +480,7 @@ return (
     </div>
   </section>
 
-  {/* 店舗情報セクション */}
+  {/* 店舗情報 */}
   <section className="py-16 bg-white">
     <div className="container mx-auto px-2 md:px-4">
       <h2 className="text-xl md:text-2xl font-bold text-center mb-8 px-4 font-heading">
