@@ -205,7 +205,7 @@ return (
         <div className="space-y-3">
           <div className="relative aspect-square w-full">
             <Image
-              src="/placeholder.svg?height=480&width=480"
+              src="/images/赤身の柔らかさ.png"
               alt="赤身の柔らかさ"
               fill
               className="object-cover rounded-lg"
@@ -220,7 +220,7 @@ return (
         <div className="space-y-3">
           <div className="relative aspect-square w-full">
             <Image
-              src="/placeholder.svg?height=480&width=480"
+              src="/images/臭みの少なさ.png"
               alt="臭みの少なさ"
               fill
               className="object-cover rounded-lg"
@@ -235,7 +235,7 @@ return (
         <div className="space-y-3">
           <div className="relative aspect-square w-full">
             <Image
-              src="/placeholder.svg?height=480&width=480"
+              src="/images/鮮度の差.png"
               alt="鮮度の差"
               fill
               className="object-cover rounded-lg"
@@ -250,7 +250,7 @@ return (
         <div className="space-y-3">
           <div className="relative aspect-square w-full">
             <Image
-              src="/placeholder.svg?height=480&width=480"
+              src="/images/安心・安全の取り組み.png"
               alt="安心・安全の取り組み"
               fill
               className="object-cover rounded-lg"
@@ -268,23 +268,60 @@ return (
   {/* 秘伝の製法 */}
   <section className="py-16 bg-white">
     <div className="container mx-auto px-4 max-w-6xl">
-      <div className="grid lg:grid-cols-2 gap-10 items-center">
-        <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold font-heading">旨さを閉じ込める、炭酸低温煮込み</h2>
-          <p className="text-[17px] leading-relaxed text-gray-700 font-sans">
-            煮込み時に炭酸を加えることで、肉の繊維を壊さず柔らかく仕上げます。さらに、煮上がった後は継ぎ足し育てた秘伝のタレに一晩浸し、旨味を芯まで染み込ませます。これは年間を通じて大量にチャーシューを仕込むプロだからできる味づくりです。
-          </p>
+      <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-heading">旨さを閉じ込める、炭酸低温煮込み</h2>
+      <div className="flex flex-col gap-12">
+        {/* 1. 炭酸がもたらす驚きの柔らかさ */}
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="relative aspect-[4/3] w-full">
+            <Image
+              src="/images/IMG_0949（補正）.jpg"
+              alt="炭酸低温煮込みのイメージ"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+          <div className="space-y-4 font-sans">
+            <h3 className="text-xl font-bold font-heading">● 炭酸がもたらす驚きの柔らかさ</h3>
+            <p className="text-[17px] leading-relaxed text-gray-700">
+              チャーシューの命は“食感”にあります。私たちは煮込み時に炭酸水を加えるという独自の製法で、肉の繊維を壊さず、芯までしっとりと仕上げています。グツグツ煮立てず、温度を徹底管理することで、赤身までふわっとほどけるような柔らかさを実現しました。これはご家庭ではなかなか再現できない、プロの技術です。
+            </p>
+          </div>
         </div>
-        <div className="grid sm:grid-cols-3 gap-4">
-          {[
-            "/images/IMG_0941（補正）.jpg",
-            "/images/IMG_0949（補正）.jpg",
-            "/images/IMG_9059.jpg",
-          ].map((src, idx) => (
-            <div key={idx} className="relative aspect-[4/3] w-full">
-              <Image src={src || "/placeholder.svg"} alt={`製法イメージ ${idx + 1}`} fill className="object-cover rounded-lg" />
-            </div>
-          ))}
+
+        {/* 2. 継ぎ足し育てた“秘伝のたれ” */}
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="relative aspect-[4/3] w-full md:order-2">
+            <Image
+              src="/images/IMG_9059.jpg"
+              alt="秘伝のたれのイメージ"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+          <div className="space-y-4 font-sans md:order-1">
+            <h3 className="text-xl font-bold font-heading">● 継ぎ足し育てた“秘伝のたれ”</h3>
+            <p className="text-[17px] leading-relaxed text-gray-700">
+              煮込み終わったチャーシューはすぐに切らず、継ぎ足して育てた濃厚なタレに一晩じっくり漬け込みます。何度も使い込むことで旨みが蓄積されたタレは、ゼラチン質のようにとろみを帯び、まさに「味のかたまり」。このタレが、肉に奥深いコクと香りを染み渡らせていくのです。
+            </p>
+          </div>
+        </div>
+
+        {/* 3. 毎日炊くからこそ、たどり着ける味 */}
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="relative aspect-[4/3] w-full">
+            <Image
+              src="/images/IMG_0957（補正）.jpg"
+              alt="毎日炊くイメージ"
+              fill
+              className="object-cover rounded-lg"
+            />
+          </div>
+          <div className="space-y-4 font-sans">
+            <h3 className="text-xl font-bold font-heading">● 毎日炊くからこそ、たどり着ける味</h3>
+            <p className="text-[17px] leading-relaxed text-gray-700">
+              私たちは年間を通して何百キロというチャーシューを炊いています。仕込みの量が違えば、鍋にたまる旨味の濃度も違う。大量調理だからこそ引き出せる“厚みのある味”が、ここにはあります。再現ではなく、“積み重ね”でしかたどり着けないプロの味。ぜひ、ご家庭で体感してください。
+            </p>
+          </div>
         </div>
       </div>
     </div>
