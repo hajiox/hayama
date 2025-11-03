@@ -4,7 +4,7 @@ import HayamaChashuLP from "@/components/hayama-chashu-lp"
 import SiteHeader from "@/components/site-header"
 
 export async function generateMetadata(): Promise<Metadata> {
-  const h = headers()
+  const h = await headers()
   const protocol = h.get("x-forwarded-proto") ?? "https"
   const host = h.get("x-forwarded-host") ?? h.get("host") ?? "localhost:3000"
   const baseUrl = `${protocol}://${host}`
