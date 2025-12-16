@@ -5,6 +5,7 @@ import MetaPixel from "./_components/MetaPixel"
 import OutboundClickTracker from "./_components/OutboundClickTracker"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hayamakougenton.aizubrandhall-lp2.com"),
   title: {
     default: "会津ブランド館｜福島県会津の特産品・グルメ通販",
     template: "%s | 会津ブランド館",

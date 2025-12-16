@@ -1,13 +1,9 @@
-import { headers } from "next/headers"
 import type { Metadata } from "next"
 import HayamaChashuLP from "@/components/hayama-chashu-lp"
 import SiteHeader from "@/components/site-header"
 
 export async function generateMetadata(): Promise<Metadata> {
-  const h = await headers()
-  const protocol = h.get("x-forwarded-proto") ?? "https"
-  const host = h.get("x-forwarded-host") ?? h.get("host") ?? "localhost:3000"
-  const baseUrl = `${protocol}://${host}`
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hayamakougenton.aizubrandhall-lp2.com"
 
   const title = "【公式】麓山高原豚｜ラーメン屋が作る本物のチャーシュー国産｜会津ブランド館"
   const description =
