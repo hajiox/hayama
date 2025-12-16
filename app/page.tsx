@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "会津ブランド館",
       images: [
         {
-          url: `${baseUrl}/images/OGP_アートボード 1.jpg`,
+          url: `${baseUrl}/images/OGP.jpg`,
           width: 1200,
           height: 630,
           alt: "麓山高原豚チャーシューの盛り付け写真",
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       creator: "@aizu_brand_kan",
       title,
       description,
-      images: [`${baseUrl}/images/OGP_アートボード 1.jpg`],
+      images: [`${baseUrl}/images/OGP.jpg`],
     },
     robots: {
       index: true,
