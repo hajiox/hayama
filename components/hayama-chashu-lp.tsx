@@ -506,9 +506,10 @@ export default function HayamaChashuLP() {
                 <p className="text-sm text-center mb-4 font-sans">
                   PayPayポイントが貯まる使えるショッピングモールはこちら
                 </p>
-                <p className="text-sm text-center text-red-600 font-bold font-sans">
-                  初めて当店をご利用のお客様に300円クーポン進呈中！
-                </p>
+                <p className="mx-auto mt-3 inline-flex w-full max-w-[280px] flex-col items-center justify-center rounded border border-red-300 bg-white px-3 py-2.5 text-center font-sans text-[0.82rem] font-bold leading-snug text-red-700 shadow-sm">
+  <span>初めて当店をご利用のお客様に</span>
+  <span className="mt-0.5 text-[0.95rem] text-red-800">300円クーポン進呈中！</span>
+</p>
               </Link>
             </div>
 
@@ -534,9 +535,10 @@ export default function HayamaChashuLP() {
                 <p className="text-sm text-center mb-4 font-sans">
                   楽天ポイントが使える国内最大級のショッピングモールはこちら
                 </p>
-                <p className="text-sm text-center text-red-600 font-bold font-sans">
-                  初めて当店をご利用のお客様に300円クーポン進呈中！
-                </p>
+                <p className="mx-auto mt-3 inline-flex w-full max-w-[280px] flex-col items-center justify-center rounded border border-red-300 bg-white px-3 py-2.5 text-center font-sans text-[0.82rem] font-bold leading-snug text-red-700 shadow-sm">
+  <span>初めて当店をご利用のお客様に</span>
+  <span className="mt-0.5 text-[0.95rem] text-red-800">300円クーポン進呈中！</span>
+</p>
               </Link>
             </div>
 
